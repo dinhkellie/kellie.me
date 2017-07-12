@@ -20,8 +20,18 @@ body {
 .about {
     background-color: #FFF;
     height: 100vh;
+}
 
-
+.initials {
+    width: 20vw;
+    height: 20vh;
+    background-color: white;
+    text-align: center;
+    font-size: 72px;
+    -moz-border-radius: 10vw;
+	-webkit-border-radius: 10vw;
+	border-radius: 10vh;
+}
 
 
 
