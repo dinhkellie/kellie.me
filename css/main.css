@@ -1,16 +1,14 @@
 /* ==========================================================================
-   Author's custom styles
+   Kellie's custom styles
    ========================================================================== */
 
-/* GLOBAL STYLES & WIDTHS*/
+/* GLOBAL STYLES & CONTENT WIDTHS/PADDING */
 
 body {
     font-family: 'Lato', sans-serif;
     width: 100%;
     height: 100%;
 }
-
-/* COLORS - TEXT, BACKGROUND, & DETAILS */
 
 .sidebar {
     background-color: #C2CAE8;
@@ -22,18 +20,35 @@ body {
     height: 100vh;
 }
 
-.initials {
-    width: 20vw;
-    height: 20vh;
-    background-color: white;
-    text-align: center;
-    font-size: 72px;
-    -moz-border-radius: 10vw;
-	-webkit-border-radius: 10vw;
-	border-radius: 10vh;
+.about-body {
+    padding: 5%;
 }
 
+.now {
+    padding-top: 5%;
+}
 
+/* COLORS - TEXT, BACKGROUND, & DETAILS */
+
+.initials {
+    display: flex;
+    justify-content: center;
+}
+
+.initials img {
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 10%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.text {
+    font-size: 1.5em;
+}
 
 
 
