@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
@@ -27,11 +27,6 @@
     <script src="js/main.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $("pastTitle").click(function () {
-                $("pastBody").toggle();
-            });
-        });
     </script>
 </head>
 
@@ -57,60 +52,62 @@
                 </div>
                 <div class="text">
                     I'm a junior at Bryn Mawr College studying Computer Science and Urban Studies who is passionate about the intersections of art, technology, and social good.
+                    <br><br>
+                    I love to create and tinker with code, and have built a few projects I'm proud of. 
+                    <br>
                 </div>
                 <div class="now">
                     <div id="past" class="title past col-sm-4">
-                        <div onclick="past()" id="pastTitle">[+] past</div>
+                        <div id="pastTitle" onclick="past();">[+] past</div>
 
-                        <div id="pastTitle2" style="display: none">[ -] past</div>
+                        <div id="pastTitle2" style="display: none" onclick="past();">[ -] past</div>
 
-                        <div id="pastBody">
-                            <ul class="fa-ul list">
-                                <i class="fa fa-circle" aria-hidden="true"></i>
-                                <li>Product Design Intern at Bentley Systems in Philly working on the Microstation team</li>
-                                <li>First hackathon award - Hon Men at Hack the Trico!</li>
+                        <div id="pastBody" style="display: none; font-size: 0.7em;">
+                            <ul style="list-style-type:disc">
+                                <li>UX Intern at <a href="http://evoxlabs.org/people/kelliedinh">EvoXLabs</a> researching web accessibility</li>
+                                <br>
+                                <li>Product Design at <a href="https://www.bentley.com/en">Bentley Systems</a> on the Microstation team</li>
+                                <br>
+                                <li>First hackathon award - <a href="https://devpost.com/software/bored-at-the-bico">Honorable Mention</a> at <a href="http://hackthetri.co/">Hack the Tri-Co!</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div id="present" class="title present col-sm-4"> [-] present
-                        <ul class="fa-ul list">
-                            <li><i class="fa fa-circle" aria-hidden="true"></i>Co-organizing SisterHacks - marketing, sponsors, and logistics, oh my!</li>
-                            <li>Tech Lead at the Bryn Mawr College Help Desk </li>
-                            <li>Taking courses at Swarthmore, Bryn Mawr, and UPenn!</li>
-                        </ul>
+                    <div id="present" class="title present col-sm-4">
+                        <div id="presentTitle" onclick="present();">[ -] present </div>
+
+                        <div id="presentTitle2" style="display: none" onclick="present();">[+] present</div>
+
+                        <div id="presentBody" style="font-size: 0.7em;">
+                            <ul style="list-style-type:disc">
+                                <li>Co-organizing <a href="http://sisterhacks.co/">SisterHacks</a></li>
+                                <br>
+                                <li>Tech Lead at <a href="http://www.brynmawr.edu/computing/support/HelpDesk.htm">Bryn Mawr College Help Desk</a> </li>
+                                <br>
+                                <li><a href="https://www.cs.swarthmore.edu/~zpalmer/cs71/f17/">CS71</a>, <a href="http://cs.brynmawr.edu/Courses/cs372/fall2017/">CS372</a>, and <a href="http://monumentlab.muralarts.org/">FNAR305</a></li>
+                                <br>
+                                <li><a href="http://cs.brynmawr.edu/cs113/">Intro CS TA</a> (CS I and Data Structures and Algos)</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="past" class="title future col-sm-4"> [+] future
-                        <ul class="fa-ul list">
-                            <li><i class="fa fa-circle" aria-hidden="true"></i>Seeing SisterHacks come to life Spring 2018</li>
-                            <li>Presenting my research with EvoXLabs at CMU’s OurCS Research Symposium!</li>
-                        </ul>
+                    <div id="future" class="title future col-sm-4">
+
+                        <div id="futureTitle" onclick="future();">[+] future</div>
+
+                        <div id="futureTitle2" style="display: none" onclick="future();">[ -] future</div>
+
+                        <div id="futureBody" style="display: none; font-size: 0.7em;">
+                            <ul style="list-style-type:disc">
+                                <li>Seeing <a href="http://sisterhacks.co/">SisterHacks</a> come to life in Spring 2018</li>
+                                <br>
+                                <li>Presenting my research with EvoXLabs at <a href="http://www.cs.cmu.edu/ourcs/">CMU’s OurCS Research Symposium</a>!</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+        
         </div>
     </div>
-
-    <!--
-        <div class="container">
-           Example row of columns 
-          <div class="row">
-            <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-           </div>
-            <div class="col-md-4">
-              <h2>Heading</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-          </div>
-    -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <script>
