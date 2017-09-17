@@ -28,6 +28,11 @@ body {
     padding-top: 5%;
 }
 
+.icons {
+    color: black;
+    padding: 15% 5%;
+}
+
 /* COLORS - TEXT, BACKGROUND, & DETAILS */
 
 .initials {
