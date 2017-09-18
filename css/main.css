@@ -15,12 +15,12 @@ body {
     height: 100vh;
 }
 
-.about {
+.section {
     background-color: #FFF;
     height: 100vh;
 }
 
-.about-body {
+.section-body {
     padding: 5%;
 }
 
@@ -59,8 +59,12 @@ body {
     font-size: 0.65em;
 }
 
-
-
+footer {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    padding-left: 1em;
+}
 
 
 
