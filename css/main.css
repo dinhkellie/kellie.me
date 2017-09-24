@@ -20,6 +20,21 @@ body {
     height: 100vh;
 }
 
+#section {
+    opacity: 1;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+
+/*
+#section load {
+    opacity: 1;
+}
+*/
+
 .section-body {
     padding: 5%;
 }
@@ -43,7 +58,7 @@ body {
 .initials img {
     width: 100%;
     border-radius: 50%;
-    margin-top: 10%;
+    margin-top: 50%;
 }
 
 .title {

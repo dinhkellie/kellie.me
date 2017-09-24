@@ -27,6 +27,9 @@
     <script src="js/main.js"></script>
 
     <script>
+        $(document).ready(function() {
+            $('#section').fadeIn();
+        });
     </script>
 </head>
 
@@ -40,7 +43,7 @@
             <div class="initials">
                 <div class="col-xl-4">
                     <a href="/">
-                    <img src="initials.jpg"></a>
+                        <img src="initials.jpg"></a>
                     <div class="icons">
                         <div class="col-xs-2 col-xs-offset-1">
                             <a href="https://m.me/dinhkellie" target="_blank"><i class="fa fa-lg fa-comments-o" aria-hidden="true"></i></a>
@@ -57,14 +60,14 @@
                         </div>
 
                         <div class="col-xs-2">
-                            <a href="Dinh_Resume_Sept17.pdf" target="_blank"><i class="fa fa-lg fa-file-text-o" aria-hidden="true"></i></a>
+                            <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="Seeking internships for Summer 2018!" href="Kellie_Dinh_Resume.pdf" target="_blank"><i class="fa fa-lg fa-file-text-o" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section col-md-9">
+        <div id="section" class="section col-md-9">
             <div class="section-body">
                 <div class="title">about me
                     <p></p>
@@ -72,9 +75,9 @@
                 <div class="text">
                     I'm a junior at Bryn Mawr College studying Computer Science and Urban Studies who is passionate about the intersections of art, technology, and social good.
                     <br>
-                    <br> I love to make <a href="https://www.thingiverse.com/dinhkellie/about">things</a> and tinker with code, and have built a few <a href="/projects.html">projects</a> I'm proud of.
+                    <br> I love to make <a href="https://www.thingiverse.com/dinhkellie/about" target="_blank">things</a> and tinker with code, and have built a few <a href="/projects.html">projects</a> I'm proud of.
                 </div>
-                <div style="font-size: 0.65em; float: right;"><i><a href="https://github.com/dinhkellie/kellie.me">last updated 09/2017</a></i></div>
+                <div style="font-size: 0.65em; float: right;"><i><a href="https://github.com/dinhkellie/kellie.me" target="_blank">last updated 09/24/2017</a></i></div>
                 <div class="now">
                     <div id="past" class="title past col-sm-4">
                         <div id="pastTitle" onclick="past();">[+] past</div>
@@ -83,11 +86,11 @@
 
                         <div id="pastBody" style="display: none; font-size: 0.7em;">
                             <ul style="list-style-type:disc">
-                                <li>UX Intern at <a href="http://evoxlabs.org/people/kelliedinh">EvoXLabs</a> researching web accessibility</li>
+                                <li>UX Intern at <a href="http://evoxlabs.org/people/kelliedinh" target="_blank">EvoXLabs</a> researching web accessibility</li>
                                 <br>
-                                <li>Product Design at <a href="https://www.bentley.com/en">Bentley Systems</a> on the Microstation team</li>
+                                <li>Product Design at <a href="https://www.bentley.com/en" target="_blank">Bentley Systems</a> on the Microstation team</li>
                                 <br>
-                                <li>First hackathon award - <a href="https://devpost.com/software/bored-at-the-bico">Honorable Mention</a> at <a href="http://hackthetri.co/">Hack the Tri-Co!</a></li>
+                                <li>First hackathon award - <a href="https://devpost.com/software/bored-at-the-bico" target="_blank">Honorable Mention</a> at <a href="http://hackthetri.co/">Hack the Tri-Co!</a></li>
                             </ul>
                         </div>
                     </div>
@@ -98,13 +101,13 @@
 
                         <div id="presentBody" style="font-size: 0.7em;">
                             <ul style="list-style-type:disc">
-                                <li>Co-organizing <a href="http://sisterhacks.co/">SisterHacks</a></li>
+                                <li>Co-organizing <a href="http://sisterhacks.co/" target="_blank">SisterHacks</a></li>
                                 <br>
-                                <li>Tech Lead at <a href="http://www.brynmawr.edu/computing/support/HelpDesk.htm">Bryn Mawr College Help Desk</a> </li>
+                                <li>Tech Lead at <a href="http://www.brynmawr.edu/computing/support/HelpDesk.htm" target="_blank">Bryn Mawr College Help Desk</a> </li>
                                 <br>
-                                <li><a href="https://www.cs.swarthmore.edu/~zpalmer/cs71/f17/">CS71</a>, <a href="http://cs.brynmawr.edu/Courses/cs372/fall2017/">CS372</a>, and <a href="http://monumentlab.muralarts.org/">FNAR305</a></li>
+                                <li><a href="https://www.cs.swarthmore.edu/~zpalmer/cs71/f17/" target="_blank">CS71</a>, <a href="http://cs.brynmawr.edu/Courses/cs372/fall2017/" target="_blank">CS372</a>, and <a href="http://monumentlab.muralarts.org/" target="_blank">FNAR305</a></li>
                                 <br>
-                                <li><a href="http://cs.brynmawr.edu/cs113/">Intro CS TA</a> (CS I and Data Structures and Algos)</li>
+                                <li><a href="http://cs.brynmawr.edu/cs113/" target="_blank">Intro CS TA</a> (CS I and Data Structures and Algos)</li>
                             </ul>
                         </div>
                     </div>
@@ -116,9 +119,9 @@
 
                         <div id="futureBody" style="display: none; font-size: 0.7em;">
                             <ul style="list-style-type:disc">
-                                <li>Seeing <a href="http://sisterhacks.co/">SisterHacks</a> come to life in Spring 2018</li>
+                                <li>Seeing <a href="http://sisterhacks.co/" target="_blank">SisterHacks</a> come to life in Spring 2018</li>
                                 <br>
-                                <li>Presenting my research with EvoXLabs at <a href="http://www.cs.cmu.edu/ourcs/">CMU’s OurCS Research Symposium</a>!</li>
+                                <li>Presenting my research with EvoXLabs at <a href="http://www.cs.cmu.edu/ourcs/" target="_blank">CMU’s OurCS Research Symposium</a>!</li>
                             </ul>
                         </div>
                     </div>

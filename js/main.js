@@ -57,3 +57,9 @@ function future() {
     }
     
 }
+
+$('a').tooltip();
+
+$(document).ready(function() {
+    $(".contentPost").delay(2000).fadeIn(500);
+});
